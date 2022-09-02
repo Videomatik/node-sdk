@@ -1,0 +1,35 @@
+{
+  "name": "@videomatik/api",
+  "version": "2.0.0",
+  "description": "Videomatik's External API to render Videos",
+  "author": "Videomatik  Team",
+  "homepage": "https://videomatik.com.br",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "BABEL_ENV=production babel src/index.js -d dist/",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "bugs": {
+    "url": "https://videomatik.com.br"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "axios": "^0.19.0",
+    "probe-image-size": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-polyfill": "^6.26.0",
+    "rimraf": "^3.0.2"
+  }
+}
