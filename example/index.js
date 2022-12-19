@@ -1,12 +1,10 @@
 // eslint-disable-next-line import/no-unresolved
 import VideomatikAPI from '@videomatik/api';
 
-const CLIENT_ID = '< your client id >';
-const CLIENT_SECRET = '< your client secret >';
+const VIDEOMATIK_API_KEY = '< your api key >';
 
 const authenticateOnVideomatikAPI = () => new VideomatikAPI({
-  clientId: CLIENT_ID,
-  clientSecret: CLIENT_SECRET,
+  apiKey: VIDEOMATIK_API_KEY,
 });
 
 const createVideoRequest = async (videomatikApi) => {
