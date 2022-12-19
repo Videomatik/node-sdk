@@ -238,7 +238,7 @@ const videoRequest = await api.getOneVideoRequest('<your-video-request-id>');
 //   },
 //   "renderJob":{
 //     "state":"finished",
-//     "downloadURL":https://download-url.com/video.mp4
+//     "downloadURL":"https://download-url.com/video.mp4"
 //   },
 //   "compositionId":"default"
 //   "id":"IIIIIIIIIIIIII"
