@@ -237,13 +237,23 @@ const videoRequest = await api.getOneVideoRequest('<your-video-request-id>');
 //     ...
 //   },
 //   "renderJob":{
-//     "state":"started",
-//     "downloadURL":null
+//     "state":"finished",
+//     "downloadURL":"https://download-url.com/video.mp4"
 //   },
 //   "compositionId":"default"
 //   "id":"IIIIIIIIIIIIII"
 // }
 ```
+### Video Request Status
+
+  The list of possible Video Request Status:
+
+  - **waiting**: The video request was created and is awaiting in queue to be rendered.
+    - The downloadURL attribute will return null and it will only change when the video request is finished.
+  - **rendering**: The video started rendering and soon will be available for download.
+  - **finished**: The video finished rendering successfully and is ready for download.
+    - The downloadURL attribute will return a string with the URL to download the video.
+  - **error**: An error happened while rendering the video.
 
 ## listVideoRequests(paginationOptions)
 
