@@ -1,12 +1,14 @@
 {
   "name": "@videomatik/api",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Videomatik's External API to render Videos",
   "author": "Videomatik  Team",
   "homepage": "https://videomatik.com.br",
   "license": "MIT",
   "main": "dist/index.js",
-  "bugs": "https://github.com/Videomatik/node-sdk/issues",
+  "bugs": {
+    "url": "https://videomatik.com.br"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Videomatik/node-sdk"
@@ -19,9 +21,6 @@
     "clean": "rimraf dist",
     "build": "BABEL_ENV=production babel src/index.js -d dist/",
     "prepublishOnly": "npm run clean && npm run build"
-  },
-  "bugs": {
-    "url": "https://videomatik.com.br"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.5",
