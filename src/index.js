@@ -2,7 +2,7 @@
 import axios from 'axios';
 import probeImageSize from 'probe-image-size';
 
-const AUTH_URL = 'https://api2.videomatik.com.br';
+const AUTH_URL = 'https://api.videomatik.com.br';
 
 // TODO this will be migrated to JSON object instead of
 // string in the future so this method can be removed
