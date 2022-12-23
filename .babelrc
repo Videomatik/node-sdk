@@ -1,0 +1,19 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "@babel/preset-env"
+      ],
+      "plugins": [
+        "add-module-exports"
+      ]
+    },
+    "production": {
+      "presets": ["@babel/preset-env"],
+      "plugins": [
+        "add-module-exports",
+        "@babel/plugin-transform-runtime"
+      ]
+    }
+  }
+}
