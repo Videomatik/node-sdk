@@ -263,16 +263,6 @@ Retrieve a list of all requested videos so far. `paginationOptions` is an object
 const videoRequests = await api.listVideoRequests({ limit: 10, offset: 0 });
 ```
 
-## deleteVideoRequest(id)
-
-Remove a specific video request
-
-```javascript
-const { success } = await api.deleteVideoRequest('<your-video-request-id>');
-// success === true -> deleted
-// success === false -> not deleted
-```
-
 # Actions
 
 Actions are called after the video is rendered.
