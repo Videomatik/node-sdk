@@ -108,13 +108,6 @@ export default class VideomatikAPI {
     return _parseVideoRequestJSONFields(videoRequest);
   }
 
-  async deleteVideoRequest(id) {
-    return this._getRequestData({
-      url: `/v1/video-requests/${id}`,
-      method: 'DELETE',
-    });
-  }
-
   async requestNewVideo(videoRequestBody) {
     console.warn('@videomatik/api - WARNING: requestNewVideo method is deprecated, use createVideoRequest instead.');
     return this.createVideoRequest(videoRequestBody);
